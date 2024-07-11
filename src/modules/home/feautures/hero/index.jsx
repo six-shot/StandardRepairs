@@ -6,12 +6,11 @@ export default function Hero() {
   return (
     <div className="relative w-full ">
       <div className="relative w-full h-[83vh]">
-        {/*
         <Spline
           className="absolute  left-0 w-full h-full z-10"
           scene="https://prod.spline.design/KB-zkHUAhzkRRfSV/scene.splinecode"
-        /> */}
-
+        />{" "}
+        
         <div className="absolute top-0 left-0 w-full h-[83vh] flex flex-col items-center justify-center z-20">
           <h1 className="text-white text-[65px] font-bold  text-center leading-[76px]">
             DOORSTEP REPAIR <br /> SERVICES
