@@ -6,7 +6,7 @@ export default function Reviews() {
     <div className="relative w-full px-[5%]">
       <div className="relative w-full h-[700px]">
         <img className="absolute  left-0 w-full h-full z-10" src={reviews} />
-        <div className="absolute top-0 left-0 w-full h-[700px] grid sm:grid-cols-2 grid-cols-1 gap-20 py-[5%] sm:px-[10%] z-20">
+        <div className="absolute top-0 left-0 w-full h-[700px] grid sm:grid-cols-2 grid-cols-1 sm:gap-20 py-[5%] sm:px-[10%] z-20">
           <div className="col-span-1"></div>
           <div className="col-span-1">
             <div className=" w-full h-full px-[5%] py-[7%] text-white  rounded-[16px]  bg-transparent_background  backdrop-blur-[11px] shadow-[6px_6px_10px_0_rgba(0,0,0,0.25)] border border-transparent_stroke">
@@ -50,7 +50,7 @@ export default function Reviews() {
                   <div className="w-full  bg-[#CFCFCF] rounded-[5px] mt-1">
                     <textarea
                       rows="4"
-                      cols="50"
+                      cols="0"
                       className="text-[#4F4F4F]   outline-none bg-transparent placeholder:text-xs p-3 resize-none"
                       placeholder="Drop a review"
                       required
