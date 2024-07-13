@@ -5,8 +5,6 @@ import Network from "./feautures/networks";
 
 import Products from "./feautures/product";
 
-import JoinUs from "./feautures/joinus";
-
 import NavFootLayout from "./layouts/NavFootLayout";
 import FAQ from "./feautures/faq";
 import About from "./feautures/about";
@@ -26,7 +24,7 @@ export default function Home() {
         <FAQ />
         <Skills />
         <Testimonial />
-        <JoinUs />
+      
       </NavFootLayout>
     </div>
   );
