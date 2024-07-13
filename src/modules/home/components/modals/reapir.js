@@ -98,10 +98,12 @@ export default function Repair({}) {
                         <label className="text-xs font-medium">
                           Device Fault
                         </label>
-                        <div className="w-full h-[110px] bg-[#CFCFCF] rounded-[5px] mt-1">
-                          <input
-                            type="text"
-                            className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
+                        <div className="w-full  bg-[#CFCFCF] rounded-[5px] mt-1">
+                          <textarea
+                            rows="4"
+                            cols="0"
+                            className="text-[#4F4F4F]   outline-none bg-transparent placeholder:text-xs p-3 resize-none"
+                            placeholder="Describe your device fault"
                             required
                           />
                         </div>
