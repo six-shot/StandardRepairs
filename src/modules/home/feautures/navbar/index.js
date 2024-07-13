@@ -51,8 +51,9 @@ function Navbar() {
           <CiSearch className="text-[28px]" />
           <CiShoppingCart className="text-[28px]" />
         </div>
-        <div className="sm:hidden flex" onClick={toggleMenu}>
-          <HiOutlineMenuAlt4 className="text-[28px]" />
+        <div className="sm:hidden flex gap-2 items-center">
+          <Repair />
+          <HiOutlineMenuAlt4 onClick={toggleMenu} className="text-[28px]" />
         </div>
       </div>
       <nav className="px-[5%] w-full bg-black h-[7vh] sm:flex hidden justify-center items-center text-white">
@@ -75,7 +76,9 @@ function Navbar() {
               )}
             </li>
           ))}
-          <li><Repair/></li>
+          <li>
+            <Repair />
+          </li>
         </ul>
       </nav>
       <div>

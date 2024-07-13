@@ -26,7 +26,7 @@ export default function Repair({}) {
     <>
       <Button
         onClick={open}
-        className="bg-white text-sm text-black px-3 py-2 rounded-md"
+        className="sm:bg-white bg-black sm:text-sm text-xs text-white sm:text-black sm:px-3 px-2 sm:py-2 py-1.5 rounded-md"
       >
         Start a repair
       </Button>
@@ -77,26 +77,54 @@ export default function Repair({}) {
                           />
                         </div>
                       </div>
-                      <Device/>
-                      <div>
-                        <label className="text-xs font-medium">Title</label>
+                      <Device />
+                      <div className="mt-4">
+                        <label className="text-xs font-medium">
+                          Device Model
+                        </label>
                         <div className="w-full h-[40px] bg-[#CFCFCF] rounded-[5px] mt-1">
                           <input
                             type="text"
                             className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
-                            placeholder="Enter party description"
+                            placeholder="Enter Your Device Model"
                             required
                           />
                         </div>
                       </div>
+
                       <div className="mt-4">
-                        <label className="text-xs font-medium">Body</label>
+                        <label className="text-xs font-medium">
+                          Device Fault
+                        </label>
                         <div className="w-full  bg-[#CFCFCF] rounded-[5px] mt-1">
                           <textarea
                             rows="4"
                             cols="50"
                             className="text-[#4F4F4F] w-full  outline-none bg-transparent placeholder:text-xs p-3 resize-none"
-                            placeholder="Enter your body text"
+                            placeholder="Describe Your Device Fault"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div className="mt-4">
+                        <label className="text-xs font-medium">Upload Images</label>
+                        <div className="w-full h-[40px] flex justify-center items-center cursor-pointer bg-[#CFCFCF] rounded-[5px] mt-1">
+                          <input
+                            
+                            type="file"
+                            id="formupload-pdf"
+                            name="pdf"
+                            accept="application/pdf"
+                          />
+                        </div>
+                      </div>
+                      <div className="mt-4">
+                        <label className="text-xs font-medium">City</label>
+                        <div className="w-full h-[40px] bg-[#CFCFCF] rounded-[5px] mt-1">
+                          <input
+                            type="text"
+                            className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
+                            placeholder="Enter Your City"
                             required
                           />
                         </div>
