@@ -139,7 +139,7 @@ export default function Repair({}) {
                         }`}
                         disabled={isLoading}
                       >
-                        {isLoading ? "Start a repair..." : "Start a repaie"}
+                        {isLoading ? "Start a repair..." : "Start a repair"}
                       </button>
                     </form>
                   </div>
