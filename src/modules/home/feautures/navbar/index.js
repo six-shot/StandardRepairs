@@ -7,6 +7,7 @@ import { CiSearch } from "react-icons/ci";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { containerVars, menuVars, mobileLinkVars } from "../../../../utils/motion";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaCaretDown } from "react-icons/fa";
 import Repair from "../../components/modals/reapir";
 function Navbar() {
   const [dropdown, setDropdown] = useState({});
@@ -67,9 +68,10 @@ function Navbar() {
             >
               <Link
                 to={item.path}
-                className="no-underline text-white text-sm mr-8 p-2 rounded-md hover:bg-black"
+                className="no-underline text-white text-sm mr-8 p-2 rounded-md hover:bg-black flex items-center gap-2"
               >
                 {item.title}
+                <FaCaretDown />
               </Link>
               {item.dropdown && dropdown[item.id] && (
                 <Dropdown items={item.dropdown} />

@@ -48,7 +48,7 @@ export default function Repair({}) {
                 leaveTo="opacity-0 transform-[scale(95%)]"
                 className=" "
               >
-                <DialogPanel className=" flex justify-center px-[4%]">
+                <DialogPanel className=" flex justify-centersm:px-0  px-[4%]">
                   <div class="sm:w-[400px] px-[5%] w-full flex flex-col  gap-6  py-[6%] rounded-[16px] shadow bg-[#ffffff]">
                     <div className="flex items-center justify-between w-full">
                       <h3 className="text-xl  font-semibold">Start a Repair</h3>
@@ -98,12 +98,11 @@ export default function Repair({}) {
                         <label className="text-xs font-medium">
                           Device Fault
                         </label>
-                        <div className="w-full  bg-[#CFCFCF] rounded-[5px] mt-1">
-                          <textarea
-                            rows="4"
-                            cols="50"
-                            className="text-[#4F4F4F] w-full  outline-none bg-transparent placeholder:text-xs p-3 resize-none"
-                            placeholder="Describe Your Device Fault"
+                        <div className="w-full h-[110px] bg-[#CFCFCF] rounded-[5px] mt-1">
+                          <input
+                            type="text"
+                            className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
+                         
                             required
                           />
                         </div>
