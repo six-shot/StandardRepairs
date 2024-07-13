@@ -1,11 +1,16 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import eth from "../../assets/eth.webp";
-import bsc from "../../assets/bsc.webp";
-import arbitrum from "../../assets/arbitrum_2.webp";
-import avalache from "../../assets/avalache.webp";
-import optimism from "../../assets/optimism.webp";
-import polygon from "../../assets/polygon.webp";
+import iphone from "../../assets/iphone.png";
+import asus from "../../assets/asus.png";
+import huawei from "../../assets/huawei.png";
+import lenovo from "../../assets/lg.jpg";
+import lg from "../../assets/lg.jpg";
+import oppo from "../../assets/oppo.png";
+import nokia from "../../assets/nokia.jpg";
+import oneplus from "../../assets/oneplus.jpg";
+import samsung from "../../assets/samsung.png";
+import techno from "../../assets/techno.png";
+import Xiaomi from "../../assets/Xiaomi.png";
 export default function Network() {
   return (
     <div className="text-center text-white px-[5%]">
@@ -22,57 +27,75 @@ export default function Network() {
       <div className="px-[5%] mt-[5%]">
         <div className="">
           <Marquee className="mq" direction="right" speed={60}>
-            <div className="w-[60%]">
-              <img src={eth} alt="" />
-              <h5>Ethereum</h5>
+            <div className="image_wrapper">
+              <img src={iphone} alt="" />
             </div>
-            <div className="w-[60%]">
-              <img src={bsc} alt="" />
-              <h5>Bsc</h5>
+            <div className="image_wrapper">
+              <img src={samsung} alt="" />
             </div>
-            <div className="w-[50%]">
-              <img src={arbitrum} alt="" />
-              <h5>Arbitrum</h5>
+            <div className="image_wrapper">
+              <img src={techno} alt="" />
             </div>
-            <div className="w-[40%]">
-              <img src={avalache} alt="" />
-              <h5>Avalache</h5>
+            <div className="image_wrapper">
+              <img src={asus} alt="" />
             </div>
-            <div className="w-[60%]">
-              <img src={optimism} alt="" />
-              <h5>Optimism</h5>
+            <div className="image_wrapper">
+              <img src={huawei} alt="" />
             </div>
-            <div className="w-[50%]">
-              <img src={polygon} alt="" />
-              <h5>Ploygon</h5>
+            <div className="image_wrapper">
+              <img src={lg} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={nokia} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={oppo} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={oneplus} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={lenovo} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={Xiaomi} alt="" />
             </div>
           </Marquee>
         </div>
         <div>
           <Marquee className="mq" direction="left" speed={60}>
-            <div className="w-[60%]">
-              <img src={eth} alt="" />
-              <h5>Ethereum</h5>
+            <div className="image_wrapper">
+              <img src={iphone} alt="" />
             </div>
-            <div className="w-[60%]">
-              <img src={bsc} alt="" />
-              <h5>Bsc</h5>
+            <div className="image_wrapper">
+              <img src={samsung} alt="" />
             </div>
-            <div className="w-[50%]">
-              <img src={arbitrum} alt="" />
-              <h5>Arbitrum</h5>
+            <div className="image_wrapper">
+              <img src={techno} alt="" />
             </div>
-            <div className="w-[40%]">
-              <img src={avalache} alt="" />
-              <h5>Avalache</h5>
+            <div className="image_wrapper">
+              <img src={asus} alt="" />
             </div>
-            <div className="w-[60%]">
-              <img src={optimism} alt="" />
-              <h5>Optimism</h5>
+            <div className="image_wrapper">
+              <img src={huawei} alt="" />
             </div>
-            <div className="w-[50%]">
-              <img src={polygon} alt="" />
-              <h5>Ploygon</h5>
+            <div className="image_wrapper">
+              <img src={lg} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={nokia} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={oppo} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={oneplus} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={lenovo} alt="" />
+            </div>
+            <div className="image_wrapper">
+              <img src={Xiaomi} alt="" />
             </div>
           </Marquee>
         </div>

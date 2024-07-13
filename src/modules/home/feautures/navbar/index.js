@@ -32,7 +32,7 @@ function Navbar() {
   return (
     <div>
       {" "}
-      <div className="w-full flex justify-between items-center bg-white sm:h-[10vh] h-[8vh] px-[5%]">
+      <div className="w-full flex justify-between items-center bg-white h-[10vh]  px-[5%]">
         <div>
           <h4 className="font-bold text-2xl">LOGO</h4>
         </div>
