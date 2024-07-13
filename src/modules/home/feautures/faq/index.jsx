@@ -10,7 +10,7 @@ function Accordion({ title, answer }) {
           onClick={() => setAccordionOpen(!accordionOpen)}
           className="flex justify-between w-full"
         >
-          <span className="sm:text-xl text-sm font-semibold">{title}</span>
+          <span className="sm:text-xl text-sm font-semibold text-left">{title}</span>
           <svg
             className="fill-[#000000] shrink-0 ml-8"
             width="16"
@@ -56,29 +56,30 @@ function Accordion({ title, answer }) {
 function FAQ() {
   const faqData = [
     {
-      question: "How do I place an order?",
+      question:
+        "How does Elpizo ensure the quality of its mobile repair services?",
       answer:
-        "You can place an order by selecting the items you want to purchase and proceeding to checkout. Follow the steps to enter your shipping address, select payment method, and confirm your order.",
+        "At Elpizo, we prioritize quality by exclusively using high quality components in our repairs. Our skilled technicians ensure meticulous attention to detail, leaving no room for compromise. Your satisfaction and device performance are our top priorities.",
     },
     {
-      question: "What payment methods do you accept?",
+      question: "Can i trust Elpizo for onsite mobile repair?",
       answer:
-        "We accept major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfer for online purchases.",
+        "Absolutely! We understand the value of your time. With Elpizo, you can trust our expert engineers to bring the repair shop to your doorstep. Say goodbye to the inconvenience of travel and hello to hassle-free, professional onsite mobile repair services.",
     },
     {
-      question: "Can I change or cancel my order?",
+      question: "What brands do you cover in your repair services?",
       answer:
-        "Once an order has been placed, changes or cancellations may not be possible. Please contact our customer service as soon as possible for assistance.",
+        "Elpizo specializes in repairing a wide range of mobile brands, including but not limited to Apple, Samsung, OnePlus, and Google Pixel. Whether it's an iPhone or an Android device, we've got you covered with our expertise.",
     },
     {
-      question: "How do I return an item?",
+      question: "How do i book an onsite mobile repair service with Elpizo",
       answer:
-        "To initiate a return, please visit our returns page and follow the instructions. Make sure the item is unused and in its original packaging.",
+        "Booking with Elpizo is a breeze! Simply navigate to our website, select your city, and contact us. Our efficient system will guide you through the process, and our expert engineer will soon be at your doorstep, ready to fix your mobile device.",
     },
     {
-      question: "Do you offer international shipping?",
+      question: "Why should i choose onsite repair over traditional repair shops?",
       answer:
-        "Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary depending on the destination.",
+        "Opting for Elpizo's onsite repair is not just about fixing your device; it's about saving your time and convenience. We bring our services to you, eliminating the need for you to travel to a repair shop. It's a personalized, efficient, and hassle-free way to get your mobile device back in top shape.",
     },
   ];
 

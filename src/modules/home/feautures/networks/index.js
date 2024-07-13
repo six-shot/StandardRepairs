@@ -15,11 +15,11 @@ export default function Network() {
   return (
     <div className="text-center text-white px-[5%]">
       <div className="flex justify-center flex-col items-center">
-        <h2 className="font-black sm:text-[40px] text-[30px] px-[20%] leading-[30px] sm:leading-[50px]">
+        <h2 className="font-black sm:text-[40px] text-[30px] sm:px-[20%] leading-[30px] sm:leading-[50px]">
           Brands We Repair at Your Doorstep
         </h2>
         <p className="sm:w-[600px] sm:text-base text-sm mt-[2%]">
-          Buzzmeeh brings top-notch repair services to your doorstep. We
+          Elpizo brings top-notch repair services to your doorstep. We
           specialize in repairing a variety of brands, ensuring convenience and
           expertise meet at your home. Your trusted tech solution awaits!
         </p>

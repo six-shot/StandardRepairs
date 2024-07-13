@@ -1,11 +1,12 @@
 import React from "react";
 import { BsFillPhoneFill } from "react-icons/bs";
+import { FaClock, FaHandSparkles } from "react-icons/fa";
 import repairs from "../../assets/repairs.jpg";
 export default function About() {
   return (
     <div className=" px-[5%] text-white">
       <div className="mt-[8%]">
-        <h6 className="text-center font-semibold text-lg">ABOUT EXPERIENCE</h6>
+        <h6 className="text-center font-semibold text-lg">ABOUT Us</h6>
         <h3 className="text-center sm:text-3xl text-xl font-semibold mt-[2%]">
           We Have Than 20 Years Experience in Gadget
           <br className="sm:flex hidden" /> Smartphone & Laptop Repair Services
@@ -30,7 +31,7 @@ export default function About() {
           <div className=" col-span-1 w-full sm:h-[150px] h-[100px] bg-[#626262] rounded-md flex gap-6 items-center px-[4%]">
             <div classNAme="w-[20%]">
               <div className="bg-black sm:w-[60px] w-[40px] h-[40px] sm:h-[60px]  rounded-full flex  justify-center items-center">
-                <BsFillPhoneFill className="text-white sm:text-[30px] text-[20px]" />
+                <FaHandSparkles className="text-white sm:text-[30px] text-[20px]" />
               </div>
             </div>
             <div className=" w-[80%] flex flex-col">
@@ -45,7 +46,7 @@ export default function About() {
           <div className=" col-span-1 w-full sm:h-[150px] h-[100px] bg-[#626262] rounded-md flex gap-6 items-center px-[4%]">
             <div classNAme="w-[20%]">
               <div className="bg-black sm:w-[60px] w-[40px] h-[40px] sm:h-[60px]  rounded-full flex  justify-center items-center">
-                <BsFillPhoneFill className="text-white sm:text-[30px] text-[20px]" />
+                <FaClock className="text-white sm:text-[30px] text-[20px]" />
               </div>
             </div>
             <div className=" w-[80%] flex flex-col">
