@@ -111,4 +111,24 @@ export const navItems = [
       },
     ],
   },
+  {
+    id: 6,
+    title: "Car Parts",
+    path: "./products",
+    cName: "nav-item",
+    dropdown: [
+      {
+        id: 1,
+        title: "Chargers",
+        path: "./chargers",
+        cName: "submenu-item",
+      },
+      {
+        id: 2,
+        title: "Cables",
+        path: "./cables",
+        cName: "submenu-item",
+      },
+    ],
+  },
 ];

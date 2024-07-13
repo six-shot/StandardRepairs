@@ -10,6 +10,7 @@ import FAQ from "./feautures/faq";
 import About from "./feautures/about";
 import Skills from "./feautures/skills";
 import Testimonial from "./feautures/testimonial";
+import Reviews from "./feautures/reviews";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <FAQ />
         <Skills />
         <Testimonial />
+        <Reviews/>
       
       </NavFootLayout>
     </div>
