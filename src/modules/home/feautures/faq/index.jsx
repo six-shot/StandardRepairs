@@ -10,7 +10,7 @@ function Accordion({ title, answer }) {
           onClick={() => setAccordionOpen(!accordionOpen)}
           className="flex justify-between w-full"
         >
-          <span className="text-xl font-semibold">{title}</span>
+          <span className="sm:text-xl text-sm font-semibold">{title}</span>
           <svg
             className="fill-[#000000] shrink-0 ml-8"
             width="16"
@@ -44,7 +44,7 @@ function Accordion({ title, answer }) {
               : "grid-rows-[0fr] opacity-0"
           }`}
         >
-          <div className="overflow-hidden pb-3 w-full  font-semibold text-base">
+          <div className="overflow-hidden pb-3 w-full  font-semibold text-sm sm:text-base">
             {answer}
           </div>
         </div>
@@ -87,12 +87,12 @@ function FAQ() {
       <div className="w-full my-[5%] py-[5%] bg-[#F9F9F9] font-clash">
         <div className="">
           <div className="px-[5%]">
-            <div className="grid grid-cols-2 gap-20">
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 sm:gap-20">
               <div className="col-span-1">
-                <h6 className="font-semibold text-lg uppercase">
-                  HAve QUestions
+                <h6 className="font-semibold sm:text-lg text-sm uppercase">
+                  HAve Questions
                 </h6>
-                <h2 className=" font-semibold text-4xl">
+                <h2 className=" font-semibold sm:text-4xl text-xl">
                   Frequently Asked Questions
                 </h2>
                 <p className="my-[5%] text-sm">

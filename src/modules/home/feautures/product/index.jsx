@@ -4,9 +4,9 @@ import React from "react";
 export default function Products() {
   return (
     <div className="px-[5%] my-[10%] ">
-      <h1 className="text-[50px] font-black text-white mb-7">Why Us</h1>
+      <h1 className="sm:text-[50px] text-[30px] font-black text-white mb-7">Why Us</h1>
 
-      <div className="grid grid-cols-2 gap-8 mt-8">
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 sm:mt-8 mt-2">
         <div className="col-span-1 h-[500px] flex justify-between flex-col border border-[#303031] rounded-[40px] px-[4%] pt-[3%] pb-[5%]">
           <div>
             <h3 className="text-white font-bold text-[34px]">
