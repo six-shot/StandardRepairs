@@ -8,6 +8,7 @@ import {
 } from "@headlessui/react";
 import React, { useState } from "react";
 import Device from "../dropdowns/repairs";
+import { IoClose } from "react-icons/io5";
 
 export default function Repair({}) {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function Repair({}) {
     <>
       <Button
         onClick={open}
-        className="sm:bg-white bg-black sm:text-sm text-xs text-white sm:text-black sm:px-3 px-2 py-2  rounded-md"
+        className="sm:bg-white bg-black sm:text-sm text-xs text-white sm:text-black px-3  py-2  rounded-md"
       >
         Start a repair
       </Button>
@@ -49,8 +50,9 @@ export default function Repair({}) {
               >
                 <DialogPanel className=" flex justify-center">
                   <div class="sm:w-[400px] px-[5%] w-full flex flex-col  gap-6  py-[6%] rounded-[16px] shadow bg-[#ffffff]">
-                    <div className="flex items-start justify-between w-full">
+                    <div className="flex items-center justify-between w-full">
                       <h3 className="text-xl  font-semibold">Start a Repair</h3>
+                      <IoClose onClick={close} className="text-[28px]" />
                     </div>
                     <form>
                       <div>
@@ -107,10 +109,11 @@ export default function Repair({}) {
                         </div>
                       </div>
                       <div className="mt-4">
-                        <label className="text-xs font-medium">Upload Images</label>
+                        <label className="text-xs font-medium">
+                          Upload Images
+                        </label>
                         <div className="w-full h-[40px] flex justify-center items-center cursor-pointer bg-[#CFCFCF] rounded-[5px] mt-1">
                           <input
-                            
                             type="file"
                             id="formupload-pdf"
                             name="pdf"
