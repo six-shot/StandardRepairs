@@ -32,7 +32,7 @@ function Navbar() {
   return (
     <div>
       {" "}
-      <div className="w-full flex justify-between items-center bg-white h-[10vh] px-[5%]">
+      <div className="w-full flex justify-between items-center bg-white sm:h-[10vh] h-[8vh] px-[5%]">
         <div>
           <h4 className="font-bold text-2xl">LOGO</h4>
         </div>
@@ -50,7 +50,9 @@ function Navbar() {
           <CiSearch className="text-[28px]" />
           <CiShoppingCart className="text-[28px]" />
         </div>
-        <HiOutlineMenuAlt4 onClick={toggleMenu} className="text-[28px]" />
+        <div className="sm:hidden flex" onClick={toggleMenu}>
+          <HiOutlineMenuAlt4 className="text-[28px]" />
+        </div>
       </div>
       <nav className="px-[5%] w-full bg-black h-[7vh] sm:flex hidden justify-center items-center text-white">
         <ul className="flex items-center">
@@ -74,7 +76,7 @@ function Navbar() {
           ))}
         </ul>
       </nav>
-      <div >
+      <div>
         {" "}
         <AnimatePresence>
           {open && (
