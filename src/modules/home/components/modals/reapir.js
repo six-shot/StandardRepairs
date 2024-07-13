@@ -48,7 +48,7 @@ export default function Repair({}) {
                 leaveTo="opacity-0 transform-[scale(95%)]"
                 className=" "
               >
-                <DialogPanel className=" flex justify-center">
+                <DialogPanel className=" flex justify-center px-[4%]">
                   <div class="sm:w-[400px] px-[5%] w-full flex flex-col  gap-6  py-[6%] rounded-[16px] shadow bg-[#ffffff]">
                     <div className="flex items-center justify-between w-full">
                       <h3 className="text-xl  font-semibold">Start a Repair</h3>
