@@ -14,8 +14,14 @@ export default function Device() {
       models: [
         "MacBook Air (2020 M1)",
         "MacBook Pro 14-inch (2021 M1 Pro/M1 Max)",
-        "MacBook Pro 14-inch (2021 M1 Pro/M1 Max)",
-       
+        "MacBook Pro 16-inch (2021 M1 Pro/M1 Max)",
+        "MacBook Air (2019, Retina display)",
+        "MacBook Pro 13-inch (2020, M1)",
+        "MacBook Pro 16-inch (2019)",
+        "MacBook Air (2018, Retina display)",
+        "MacBook Pro 15-inch (2019)",
+        "MacBook (2017, Retina display)",
+        "MacBook Pro 13-inch (2017)",
       ],
     },
   ];
