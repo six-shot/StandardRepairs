@@ -6,10 +6,10 @@ export default function Hero() {
   return (
     <div className="relative w-full px-[5%]">
       <div className="relative w-full h-[83vh]">
-        {/* <Spline
+        <Spline
           className="absolute  left-0 w-full h-full z-10"
           scene="https://prod.spline.design/KB-zkHUAhzkRRfSV/scene.splinecode"
-        />{" "} */}
+        />{" "}
         
         <div className="absolute top-0 left-0 w-full h-[83vh] flex flex-col items-center justify-center z-20">
           <h1 className="text-white sm:text-[65px] text-[40px] font-bold  text-center leading-[45px] sm:leading-[76px]">
