@@ -7,6 +7,7 @@ import { CiSearch } from "react-icons/ci";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { containerVars, menuVars, mobileLinkVars } from "../../../../utils/motion";
 import { AnimatePresence, motion } from "framer-motion";
+import Repair from "../../components/modals/reapir";
 function Navbar() {
   const [dropdown, setDropdown] = useState({});
 
@@ -74,6 +75,7 @@ function Navbar() {
               )}
             </li>
           ))}
+          <li><Repair/></li>
         </ul>
       </nav>
       <div>

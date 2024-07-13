@@ -7,10 +7,17 @@ import pays from "../../assets/pays.png";
 export default function Products() {
   return (
     <div className="px-[5%] my-[10%] ">
-      <h1 className="sm:text-[50px] text-[30px] font-black text-white mb-7">
-        Why Us
+      <h1 className="sm:text-[40px] text-[30px] font-black text-white mb-7 text-center">
+        Why Choose Our Premium Repair Service
       </h1>
-
+      <div className="flex justify-center ">
+        <p className="text-white text-center sm:w-[600px] my-[2%] sm:text-base text-sm">
+          Choose us for unparalleled service excellence. We prioritize your
+          satisfaction, ensuring swift and precise solutions to all your device
+          concerns. Our team of skilled technicians guarantees top-notch
+          repairs. We restore your gadgets to peak performance
+        </p>
+      </div>
       <div className="grid sm:grid-cols-3 grid-cols-1 gap-8 sm:mt-8 mt-2">
         <div className="col-span-1 h-[400px] flex justify-between flex-col border border-[#303031] rounded-[40px] px-[4%] pt-[3%] pb-[5%]">
           <div>
