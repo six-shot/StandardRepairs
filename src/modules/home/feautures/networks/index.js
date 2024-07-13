@@ -10,7 +10,7 @@ export default function Network() {
   return (
     <div className="text-center text-white">
       <div className="flex justify-center flex-col items-center">
-        <h2 className="font-black text-[40px] px-[20%] leading-[50px]">
+        <h2 className="font-black sm:text-[40px] text-[30px] px-[20%] leading-[50px]">
           Brands We Repair at Your Doorstep
         </h2>
         <p className="w-[600px] mt-[2%]">

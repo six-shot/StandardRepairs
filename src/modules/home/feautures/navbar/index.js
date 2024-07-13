@@ -4,7 +4,7 @@ import { navItems } from "./NavItems";
 import Dropdown from "./dropdown";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
-
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
 function Navbar() {
   const [dropdown, setDropdown] = useState({});
 
@@ -23,8 +23,8 @@ function Navbar() {
         <div>
           <h4 className="font-bold text-2xl">LOGO</h4>
         </div>
-        <nav>
-          <ul className="flex gap-8 items-center">
+        <nav className="">
+          <ul className="sm:flex hidden gap-8 items-center">
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
@@ -32,12 +32,14 @@ function Navbar() {
             <li>Contact</li>
           </ul>
         </nav>
-        <div className="flex items-center gap-2 border-l border-black px-3">
+
+        <div className="sm:flex hidden items-center gap-2 border-l border-black px-3">
           <CiSearch className="text-[28px]" />
           <CiShoppingCart className="text-[28px]" />
         </div>
+        <HiOutlineMenuAlt4 className="text-[28px]" />
       </div>
-      <nav className="px-[5%] w-full bg-black h-[7vh] flex justify-center items-center text-white">
+      <nav className="px-[5%] w-full bg-black h-[7vh] sm:flex hidden justify-center items-center text-white">
         <ul className="flex items-center">
           {navItems.map((item) => (
             <li

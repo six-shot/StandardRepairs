@@ -10,28 +10,28 @@ export default function Counter() {
       onExit={() => setCounterOn(false)}
     >
       <div className="bg-black mt-[2%]  px-[10%]  ">
-        <div className="flex justify-between items-center border-[2px] border-[#74747e] px-[4%] py-[5%] rounded-[40px] ">
+        <div className="flex sm:flex-row flex-col justify-between sm:gap-0 gap-6 items-center border-[2px] border-[#74747e] px-[4%] py-[5%] rounded-[40px] ">
           <div className=" flex flex-col items-center ">
-            <h1 className="text-white text-[60px]">
+            <h1 className="text-white sm:text-[60px] text-[40px]">
               {counterOn && (
                 <CountUp start={0} end={20} duration={2} delay={0} />
               )}
               +
             </h1>
-            <h5 className="text-white">Glorious Years</h5>
+            <h5 className="text-white sm:text-base text-sm">Glorious Years</h5>
           </div>
-          <div>
-            <h1 className="text-white text-[50px]">
+          <div className="flex items-center flex-col">
+            <h1 className="text-white sm:text-[60px] text-[40px]">
               {counterOn && (
                 <CountUp start={0} end={2} duration={2} delay={0} />
               )}
               k+
             </h1>
-            <h5 className="text-white">Happy Customer</h5>
+            <h5 className="text-white sm:text-base text-sm">Happy Customer</h5>
           </div>
-          <div>
+          <div className="flex items-center flex-col">
             {" "}
-            <h1 className="text-white text-[50px]">
+            <h1 className="text-white sm:text-[60px] text-[40px]">
               {counterOn && (
                 <CountUp start={0} end={5} duration={2} delay={0} />
               )}
@@ -39,14 +39,16 @@ export default function Counter() {
             </h1>
             <h5 className="text-white">Service Complete</h5>
           </div>
-          <div>
-            <h1 className="text-white text-[50px]">
+          <div className="flex items-center flex-col">
+            <h1 className="text-white sm:text-[60px] text-[40px]">
               {counterOn && (
                 <CountUp start={0} end={99} duration={2} delay={0} />
               )}
               %
             </h1>
-            <h5 className="text-white">Liquidity Source</h5>
+            <h5 className="text-white sm:text-base text-sm ">
+              Satisfaction
+            </h5>
           </div>
         </div>
       </div>
