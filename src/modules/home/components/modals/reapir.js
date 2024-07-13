@@ -37,7 +37,7 @@ export default function Repair({}) {
           onClose={close}
         >
           <div className="fixed inset-0 z-10  overflow-y-auto font-poppins bg-black/50 cursor-pointer">
-            <div className="flex min-h-full items-center justify-center p-4">
+            <div className="flex min-h-full items-center justify-center">
               <TransitionChild
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 transform-[scale(95%)]"
