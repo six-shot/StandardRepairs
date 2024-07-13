@@ -27,7 +27,7 @@ export default function Repair({}) {
     <>
       <Button
         onClick={open}
-        className="sm:bg-white bg-black sm:text-sm text-xs text-white sm:text-black px-3  py-2  rounded-md"
+        className="sm:bg-white bg-black sm:text-sm text-xs text-white sm:text-black px-4 py-3 rounded-md"
       >
         Start a repair
       </Button>
@@ -48,7 +48,7 @@ export default function Repair({}) {
                 leaveTo="opacity-0 transform-[scale(95%)]"
                 className=" "
               >
-                <DialogPanel className=" flex justify-centersm:px-0  px-[4%]">
+                <DialogPanel className=" flex justify-center sm:px-0  px-[4%]">
                   <div class="sm:w-[400px] px-[5%] w-full flex flex-col  gap-6  py-[6%] rounded-[16px] shadow bg-[#ffffff]">
                     <div className="flex items-center justify-between w-full">
                       <h3 className="text-xl  font-semibold">Start a Repair</h3>
@@ -102,7 +102,6 @@ export default function Repair({}) {
                           <input
                             type="text"
                             className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
-                         
                             required
                           />
                         </div>
