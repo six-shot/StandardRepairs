@@ -27,7 +27,7 @@ export default function Repair({}) {
     <>
       <Button
         onClick={open}
-        className="sm:bg-white bg-black sm:text-sm text-xs text-white sm:text-black px-4 sm:py-3 py-2.5 rounded-md"
+        className="sm:bg-white bg-black sm:text-sm text-xs text-white sm:text-black px-4  py-2.5 rounded-md"
       >
         Start a repair
       </Button>

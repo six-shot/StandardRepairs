@@ -11,6 +11,7 @@ import About from "./feautures/about";
 import Skills from "./feautures/skills";
 import Testimonial from "./feautures/testimonial";
 import Reviews from "./feautures/reviews";
+import Test from "./feautures/Test";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
         <Skills />
         <Testimonial />
         <Reviews/>
-      
+      <Test/>
       </NavFootLayout>
     </div>
   );
