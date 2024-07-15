@@ -21,13 +21,11 @@ export default function Home() {
         <Counter />
         <About />
         <Network />
-
         <Products />
         <FAQ />
         <Skills />
         <Testimonial />
         <Reviews/>
-      <Test/>
       </NavFootLayout>
     </div>
   );

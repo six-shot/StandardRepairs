@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
-import one from "../assets/6.mp4"
+
 import eight from "../assets/8.jpg";
 
 

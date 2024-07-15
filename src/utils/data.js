@@ -18,33 +18,18 @@ export const footerLinks = [
         name: "Sustainabilty",
         link: "/",
       },
-      {
-        name: "Career",
-        link: "/",
-      },
-      {
-        name: "The Energy Future",
-        link: "/",
-      },
-      {
-        name: "Elpizo X Technology Center",
-        link: "/",
-      },
-      {
-        name: "Ongoing Projects",
-        link: "/",
-      },
+     
     ],
   },
   {
     title: "Solutions",
     links: [
       {
-        name: "Energy Optimization System",
+        name: "Energy Optimization ",
         link: "/",
       },
       {
-        name: "Battery Energy Storage System",
+        name: "Battery Energy Storage ",
         link: "/",
       },
       {
@@ -55,10 +40,7 @@ export const footerLinks = [
         name: "Services",
         link: "/",
       },
-      {
-        name: "Technology",
-        link: "/",
-      },
+     
     ],
   },
   {

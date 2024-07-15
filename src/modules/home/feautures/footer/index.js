@@ -26,7 +26,7 @@ export default function Footer() {
               Submit
             </button>
             <p className="silka text-[10px] mt-4">
-              By clicking Submit, you consent to Polarium storing and processing
+              By clicking Submit, you consent to Elpizo storing and processing
               your personal information to provide you the content requested.
               Read our privacy policy <span className="underline">here</span>.
             </p>

@@ -1,9 +1,5 @@
 import React from "react";
 import avatarIImg from "../../assets/1.jpg";
-import avatarIIImg from "../../assets/1.jpg";
-import avatarIIIImg from "../../assets/1.jpg";
-import avatarIVImg from "../../assets/1.jpg";
-import avatarVImg from "../../assets/1.jpg";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
