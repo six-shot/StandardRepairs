@@ -21,7 +21,7 @@ const menuItems = [
       },
       {
         title: "All Car Orders",
-        path: "/all-phones-orders",
+        path: "/all-car-orders",
         icon: <MdWork />,
       },
     ],

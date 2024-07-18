@@ -8,38 +8,14 @@ import { MdDelete } from "react-icons/md";
 import { FaCaretLeft } from "react-icons/fa6";
 import { FaCaretRight } from "react-icons/fa";
 import AllOrders from "./allorders";
+import OrderTab from "./ordertab";
 export default function Dashboard() {
   return (
     <div className="bg-gradient-to-r from-black from-50% to-[#FFFFFF] to-50% sm:pb-0 pb-[10vh]">
       <div className="max-w-[1440px] mx-auto font-poppins">
         <DashboardLayout>
           <div className="sm:px-[2%] px-[4%] sm:py-[4%] bg-[#FFFFFF] h-full">
-            <div className="grid sm:grid-cols-3 grid-cols-1  gap-5 items-center sm:pr-[8%]">
-              <div className="col-span-1 h-[112px]   rounded-[10px] flex justify-between flex-col p-4">
-                <div className="flex items-center gap-[10px]">
-                  <div className="w-[34px] h-[34px] bg-[#000000] flex justify-center items-center text-white rounded-[6px]">
-                    <FaUsers className="w-[18px]" />
-                  </div>
-                  <h4 className="text-[15px] font-medium">No of Orders</h4>
-                </div>
-                <div className="flex items-end justify-end">
-                  <h4 className="text-[30px] font-semibold">2</h4>
-                </div>
-              </div>
-              <div className="col-span-1 h-[112px]  rounded-[10px] bg-[#000000] flex justify-between flex-col p-4">
-                <div className="flex items-center gap-[10px]">
-                  <div className="w-[34px] h-[34px] border border-white flex justify-center items-center text-white rounded-[6px]">
-                    <FaUsers className="w-[18px]" />
-                  </div>
-                  <h4 className="text-[15px] font-medium text-white">
-                    No of user
-                  </h4>
-                </div>
-                <div className="flex items-end justify-end">
-                  <h4 className="text-[30px] font-semibold text-white">2</h4>
-                </div>
-              </div>{" "}
-            </div>
+           <OrderTab/>
             <div>
               <div className="flex sm:flex-row flex-col justify-between sm:items-center mt-[2%] sm:mb-0 mb-[5%]">
                 <h4 className="text-lg font-medium sm:mb-0 mb-[2%]">
