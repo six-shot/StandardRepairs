@@ -11,9 +11,9 @@ function Routess() {
       <Router>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/orders" exact element={<Dashboard />} />
-          <Route path="/order/:id" exact element={<SingleOrder />} />
-          <Route path="/all-car-orders" exact element={<CarOrders />} />
+          <Route path="/orders"  element={<Dashboard />} />
+          <Route path="/order/:id" element={<SingleOrder />} />
+          <Route path="/all-car-orders" element={<CarOrders />} />
         </Routes>
       </Router>
     </div>
