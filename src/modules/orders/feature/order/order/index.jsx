@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useGetPhoneQuery } from "../../../../../store/reducers/phonerepair";
 import back from "../../../assets/back.png";
+import Loader from "../../../components/Loader";
 export default function Order() {
   const { id } = useParams();
   const { data: order, isLoading, isError, error } = useGetPhoneQuery(id);
@@ -22,11 +23,21 @@ export default function Order() {
   }, [order]);
 
   if (isLoading) {
-    return <div>loading....</div>;
+    return (
+      <div>
+        {" "}
+        <Loader />
+      </div>
+    );
   }
 
   if (isError) {
-    return <div>Error: {error.message}</div>;
+    return (
+      <div>
+        {" "}
+        <Loader />
+      </div>
+    );
   }
 
   return (

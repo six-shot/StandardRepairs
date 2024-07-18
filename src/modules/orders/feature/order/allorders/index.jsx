@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useGetPhonesQuery } from "../../../../../store/reducers/phonerepair";
+import Loader from "../../../components/Loader";
 
 export default function AllOrders() {
   const {
@@ -29,13 +30,18 @@ export default function AllOrders() {
   if (isLoading) {
     return (
       <div>
-     loading....
+   <Loader/>
       </div>
     );
   }
 
   if (isError) {
-    return <div>Error:{error.message}</div>;
+    return (
+      <div>
+        {" "}
+        <Loader />
+      </div>
+    );
   }
 
   return (

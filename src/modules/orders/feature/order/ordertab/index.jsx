@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaUsers } from 'react-icons/fa';
 import { useGetPhonesQuery } from '../../../../../store/reducers/phonerepair';
+import Loader from '../../../components/Loader';
 
 export default function OrderTab() {
       const {
@@ -27,11 +28,21 @@ export default function OrderTab() {
       }, [isSuccess, orders]);
 
       if (isLoading) {
-        return <div>loading....</div>;
+        return (
+          <div>
+            {" "}
+            <Loader />
+          </div>
+        );
       }
 
       if (isError) {
-        return <div>Error:{error.message}</div>;
+        return (
+          <div>
+            {" "}
+            <Loader />
+          </div>
+        );
       }
  const totalOrders = allOrders.filter(
    (item) => typeof item === "object"

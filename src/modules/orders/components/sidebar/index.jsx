@@ -16,7 +16,7 @@ const menuItems = [
     list: [
       {
         title: "All Phones Orders",
-        path: "/all-phones-orders",
+        path: "/orders",
         icon: <MdShoppingBag />,
       },
       {
