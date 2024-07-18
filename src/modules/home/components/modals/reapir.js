@@ -11,8 +11,9 @@ import Device from "../dropdowns/repairs";
 import { IoClose } from "react-icons/io5";
 import { useAddPhoneMutation } from "../../../../store/reducers/phonerepair";
 import Axios from 'axios'
-export default function Repair({}) {
+export default function Repair() {
   const [isOpen, setIsOpen] = useState(false);
+   const [isSuccessOpen, setIsSuccessOpen] = useState(false);
 
   const open = () => {
     setIsOpen(true);
@@ -20,6 +21,10 @@ export default function Repair({}) {
 
   const close = () => {
     setIsOpen(false);
+  };
+
+  const closeSuccess = () => {
+    setIsSuccessOpen(false);
   };
 
 
@@ -68,6 +73,7 @@ export default function Repair({}) {
      setImageSelected("");
      
      close();
+     setIsSuccessOpen(true);
    } catch (err) {
      console.error("Failed to save the collection: ", err);
    }
@@ -219,6 +225,39 @@ export default function Repair({}) {
           </div>
         </Dialog>
       </Transition>
+        <Transition appear show={isSuccessOpen}>
+        <Dialog
+          as="div"
+          className="relative z-[100] focus:outline-none"
+          onClose={closeSuccess}
+        >
+          <div className="fixed inset-0 z-10 overflow-y-auto font-poppins bg-black/50 cursor-pointer">
+            <div className="flex min-h-full items-center justify-center">
+              <TransitionChild
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 transform-[scale(95%)]"
+                enterTo="opacity-100 transform-[scale(100%)]"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 transform-[scale(100%)]"
+                leaveTo="opacity-0 transform-[scale(95%)]"
+                className=" "
+              >
+                <DialogPanel className="flex justify-center sm:px-0 px-[4%]">
+                  <div className="sm:w-[400px] px-[5%] w-full flex flex-col gap-6 py-[6%] rounded-[16px] shadow bg-[#ffffff]">
+                    <div className="flex items-center justify-between w-full">
+                      <h3 className="text-xl font-semibold">Successful</h3>
+                      <IoClose onClick={closeSuccess} className="text-[28px]" />
+                    </div>
+                    <p>Your repair request has been submitted successfully. You shall be contacted soon!!!!!</p>
+                   
+                  </div>
+                </DialogPanel>
+              </TransitionChild>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
     </>
+  
   );
 }
