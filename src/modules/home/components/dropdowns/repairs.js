@@ -10,6 +10,8 @@ export default function Device({
   selectedModel,
   setSelectedModel,
 }) {
+  
+
   const options = [
     {
       label: "Macbook",

@@ -148,21 +148,7 @@ export default function Repair() {
                         selectedModel={model}
                         setSelectedModel={setModel}
                       />
-                      <div className="mt-4">
-                        <label className="text-xs font-medium">
-                          Device Model
-                        </label>
-                        <div className="w-full h-[40px] bg-[#CFCFCF] rounded-[5px] mt-1">
-                          <input
-                            type="text"
-                            className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
-                            placeholder="Enter Your Device Model"
-                            value={model}
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                          />
-                        </div>
-                      </div>
+                      
 
                       <div className="mt-4">
                         <label className="text-xs font-medium">
