@@ -9,7 +9,8 @@ import {
 import React, { useState } from "react";
 import Device from "../dropdowns/repairs";
 import { IoClose } from "react-icons/io5";
-
+import { useAddPhoneMutation } from "../../../../store/reducers/phonerepair";
+import Axios from 'axios'
 export default function Repair({}) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +22,59 @@ export default function Repair({}) {
     setIsOpen(false);
   };
 
-  const [isLoading, setIsLoading] = useState(false);
+
+ const [name, setName] = useState("");
+ const [phoneNumber, setPhoneNumber] = useState("");
+ const [brand, setBrand] = useState("");
+ const [model, setModel] = useState("");
+ const [fault, setFault] = useState("");
+ const [city, setCity] = useState("");
+ const [addPhone] = useAddPhoneMutation();
+ const [imageSelected, setImageSelected] = useState("");
+
+ const [isLoading, setIsLoading] = useState(false);
+ const handleSubmit = async (e) => {
+   e.preventDefault();
+   setIsLoading(true);
+   try {
+     const imageFormData = new FormData();
+     imageFormData.append("file", imageSelected);
+     imageFormData.append("upload_preset", "standard");
+     const imageResponse = await Axios.post(
+       "https://api.cloudinary.com/v1_1/dnhdh9rub/image/upload",
+       imageFormData
+     );
+     const imageUrl = imageResponse.data.secure_url;
+
+   
+
+     
+     await addPhone({
+       name,
+       phoneNumber,
+       brand,
+       model,
+       fault,
+       city,
+       photoImage: imageUrl,
+     }).unwrap();
+
+     setName("");
+     setPhoneNumber("");
+     setBrand("");
+     setModel("");
+     setFault("");
+     setCity("");
+     setImageSelected("");
+     
+     close();
+   } catch (err) {
+     console.error("Failed to save the collection: ", err);
+   }
+   setIsLoading(false);
+ };
+
+
 
   return (
     <>
@@ -54,7 +107,7 @@ export default function Repair({}) {
                       <h3 className="text-xl  font-semibold">Start a Repair</h3>
                       <IoClose onClick={close} className="text-[28px]" />
                     </div>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                       <div>
                         <label className="text-xs font-medium">Name</label>
                         <div className="w-full h-[40px] bg-[#CFCFCF] rounded-[5px] ">
@@ -62,6 +115,8 @@ export default function Repair({}) {
                             type="text"
                             className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
                             placeholder="Enter Your Name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                             required
                           />
                         </div>
@@ -75,11 +130,18 @@ export default function Repair({}) {
                             type="text"
                             className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
                             placeholder="Enter Your Phone Number"
+                            value={phoneNumber}
+                            onChange={(e) => setPhoneNumber(e.target.value)}
                             required
                           />
                         </div>
                       </div>
-                      <Device />
+                      <Device
+                        selectedBrand={brand}
+                        setSelectedBrand={setBrand}
+                        selectedModel={model}
+                        setSelectedModel={setModel}
+                      />
                       <div className="mt-4">
                         <label className="text-xs font-medium">
                           Device Model
@@ -89,6 +151,8 @@ export default function Repair({}) {
                             type="text"
                             className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
                             placeholder="Enter Your Device Model"
+                            value={model}
+                            onChange={(e) => setName(e.target.value)}
                             required
                           />
                         </div>
@@ -104,6 +168,8 @@ export default function Repair({}) {
                             cols="0"
                             className="text-[#4F4F4F]   outline-none bg-transparent placeholder:text-xs p-3 resize-none"
                             placeholder="Describe your device fault"
+                            value={fault}
+                            onChange={(e) => setFault(e.target.value)}
                             required
                           />
                         </div>
@@ -114,10 +180,12 @@ export default function Repair({}) {
                         </label>
                         <div className="w-full h-[40px] flex justify-center items-center cursor-pointer bg-[#CFCFCF] rounded-[5px] mt-1">
                           <input
+                            onChange={(event) => {
+                              setImageSelected(event.target.files[0]);
+                            }}
                             type="file"
-                            id="formupload-pdf"
-                            name="pdf"
-                            accept="application/pdf"
+                            id="formupload"
+                            name="image"
                           />
                         </div>
                       </div>
@@ -128,6 +196,8 @@ export default function Repair({}) {
                             type="text"
                             className="text-[#4F4F4F] w-full h-full outline-none bg-transparent placeholder:text-xs px-3"
                             placeholder="Enter Your City"
+                            value={city}
+                            onChange={(e) => setCity(e.target.value)}
                             required
                           />
                         </div>

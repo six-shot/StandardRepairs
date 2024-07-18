@@ -4,11 +4,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import { configureStore } from "@reduxjs/toolkit";
+import reducer from "../src/store/reducers"
+import { Provider } from "react-redux";
+import { phoneApi } from './store/reducers/phonerepair';
+const store = configureStore({
+  reducer: {
+    ...reducer,
+    [phoneApi.reducerPath]: phoneApi.reducer,
+ 
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware()
+      .concat(phoneApi.middleware)
+      
+});
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
